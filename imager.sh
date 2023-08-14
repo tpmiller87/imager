@@ -45,4 +45,9 @@ cd -
 chown -R $user:$user my_tools
 
 #to-do:
-#TBD
+#Make aliases for the below commands:
+#nmap -Pn -n -sS -p 21-23,25,53,80,111,137,139,445,443,944,1433,1521,1830,3306,5432,6379,8443,8080,27017-27019,28017 --min-hostgroup 255 --min-rtt-timeout 0ms --max-rtt-timeout 100ms --max-retries 1 --max-scan-delay 0 --min-rate 6000 -oA NAMEOFOP -vvv --open -iL <IPLIST>
+#nmap -Pn -n -sS -p- --min-hostgroup 255 --min-rtt-timeout 25ms --max-rtt-timeout 100ms --max-retries 1 --max-scan-delay 0 --min-rate 1000 -oA NAMEFULL -vvv --open -iL ~/share/data/networkMapping/internal/nmap/disc/livehosts.txt
+#sudo mount -t cifs -o username=xxx,uid=$(id -u),gid=$(id -g) //<IP>/share /home/xxx/share
+#
+#Probably add Bloodhound updates (CE is out so it will be only on server)
