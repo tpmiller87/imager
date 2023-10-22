@@ -15,6 +15,8 @@ echo "Starting the preferred tools startup script..."
 sleep 2
 #update repos
 
+
+apt --fix-broken install
 apt update
 
 mkdir my_tools
@@ -43,6 +45,12 @@ cp cme /usr/bin
 #make permissions all for user 'kali' from root
 cd -
 chown -R $user:$user my_tools
+
+#install netexec
+apt install pipx git
+pipx ensurepath
+pipx install git+https://github.com/Pennyw0rth/NetExec
+echo "alias nxc='netexec'" >> /home/cpt/.zshrc
 
 #to-do:
 #Make aliases for the below commands:
