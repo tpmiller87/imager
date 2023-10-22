@@ -37,10 +37,10 @@ apt install golang-go -y
 git clone https://github.com/Flangvik/SharpCollection.git
 
 #crackmapexec update - latest 6.0.0 "BANE"
-wget https://github.com/mpgn/CrackMapExec/releases/download/v6.0.0/cme-ubuntu-latest-3.11.zip
-unzip cme-ubuntu-latest-3.11.zip
-chmod +x cme
-cp cme /usr/bin 
+#wget https://github.com/mpgn/CrackMapExec/releases/download/v6.0.0/cme-ubuntu-latest-3.11.zip
+#unzip cme-ubuntu-latest-3.11.zip
+#chmod +x cme
+#cp cme /usr/bin 
 
 #make permissions all for user 'kali' from root
 cd -
