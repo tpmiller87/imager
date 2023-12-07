@@ -15,9 +15,9 @@ echo "Starting the preferred tools startup script..."
 sleep 2
 #update repos
 
-
-apt --fix-broken install
-apt update
+apt --fix-broken install -y
+apt update -y
+apt --fix-broken install -y
 
 mkdir my_tools
 cd my_tools
@@ -47,7 +47,7 @@ cd -
 chown -R $user:$user my_tools
 
 #install netexec
-apt install pipx git
+apt install pipx git -y
 pipx ensurepath
 pipx install git+https://github.com/Pennyw0rth/NetExec
 echo "alias nxc='netexec'" >> /home/cpt/.zshrc
